@@ -12,6 +12,7 @@ import sys
 class Profile:
     def __init__(self):
         self.DATE_FORMAT = "%d-%m-%Y"
+        self.DATETIME_FORMAT = "%A %d %B %I:%M:%S %p"
         self.name = ""
         self.dateOfBirth = datetime.now()
         self.age = ""
@@ -71,5 +72,8 @@ class Profile:
             sys.exit()
 
     # Show information about the user
-    # def showMyInformation(self):
+    def showMyInformation(self):
+        print(f"Name: {self.name}")
+        print(f" Age: {self.age} ({self.dateOfBirth.strftime(self.DATE_FORMAT)})")
+        print(f"Time: {datetime.now().strftime(self.DATETIME_FORMAT)}")
         

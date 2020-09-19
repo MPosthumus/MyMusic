@@ -21,11 +21,13 @@ class Menu:
 
         cprint(f"Hi {self.profile.name}, make an option!", "green")
         print("[1] My Information")
-        print("[2] My Songs")
+        print("[2] My Favorite Songs")
         print("[3] All Songs")
         print("[4] Songs by Genre")
         print("[5] Add Song")
-        print("[5] Load  Song")
+        print("[6] Add Song to \"My Favorite Songs\"")
+        if self.playlist.isFilledWithSeed == False:
+            print("[7] Load  Songs")
         print("[9] Exit MyMusic\n")
 
         self.optionHandler()
@@ -39,29 +41,24 @@ class Menu:
             cprint("Thanks for using MyMusic. See you back soon!", "green")
             sys.exit()
         elif chosenMenuOption == 1:
-            self.showMyInformation()
+            self.profile.showMyInformation()
         elif chosenMenuOption == 2:
-            self.showMySongs()
+            self.playlist.showFavoriteSongs()
         elif chosenMenuOption == 3:
-            self.showAllSongs()
+            self.playlist.showList()
         elif chosenMenuOption == 4:
-            self.showByGenre()
+            self.playlist.songsByGenre()
         elif chosenMenuOption == 5:
             self.playlist.createSong()
+        elif chosenMenuOption == 6:
+            self.playlist.addToFavorite()
+        elif chosenMenuOption == 7 and self.playlist.isFilledWithSeed == False:
+            self.playlist.seedListOfSongs()
         else:
             self.showOptions()
 
         input("\nPress [Enter] to go back to the menu!")
         self.showOptions()
-
-    def showMyInformation(self):
-        print(self.profile)
-
-    def showMySongs(self):
-        print('My Songs')
-
-    def showAllSongs(self):
-        print(self.playlist.songs)
 
     def showByGenre(self):
         print('Genre Songs')

@@ -1,0 +1,63 @@
+{
+    "songs": [{
+        "title": "Money",
+        "artist": "Rafael",
+        "album": "Money",
+        "genre": "Deep House",
+        "duration": "5:51"
+    },{
+        "title": "Thong Song",
+        "artist": "Buzz Low",
+        "album": "Thong Song",
+        "genre": "Deep House",
+        "duration": "2:52"
+    },{
+        "title": "Party In The U.S.A.",
+        "artist": "Miley Cyrus",
+        "album": "The Time Of Our Lives",
+        "genre": "Pop",
+        "duration": "3:22"
+    },{
+        "title": "California Gurls",
+        "artist": "Katy Perry, Snoop Dogg",
+        "album": "Teenage Dream",
+        "genre": "Pop",
+        "duration": "3:55"
+    },{
+        "title": "Halo",
+        "artist": "Beyoncé",
+        "album": "I Am... Sasha Fierce",
+        "genre": "Pop",
+        "duration": "4:22"
+    },{
+        "title": "Shut Up and Dance",
+        "artist": "WALK THE MOON",
+        "album": "TALKING IS HARD",
+        "genre": "Pop",
+        "duration": "3:19"
+    },{
+        "title": "Nightfall",
+        "artist": "Jarin Lourens",
+        "album": "Nightfall",
+        "genre": "Classic",
+        "duration": "1:47"
+    },{
+        "title": "Wolkendans",
+        "artist": "Doeke",
+        "album": "Soms Alleen",
+        "genre": "Classic",
+        "duration": "2:00"
+    },{
+        "title": "Mm IV",
+        "artist": "Stephen Emmer",
+        "album": "Maison Melody",
+        "genre": "Classic",
+        "duration": "3:41"
+    },{
+        "title": "It's My Life",
+        "artist": "Bon Jovi",
+        "album": "Crush",
+        "genre": "Pop Rock",
+        "duration": "3:44"
+    }]
+}
