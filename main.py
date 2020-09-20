@@ -12,6 +12,7 @@ from profile import Profile
 from termcolor import cprint
 import sys
 
+
 clearConsole()
 
 # Welcoming messages

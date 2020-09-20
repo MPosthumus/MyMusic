@@ -26,18 +26,18 @@ class Menu:
         print("[4] Songs by Genre")
         print("[5] Add Song")
         print("[6] Add Song to \"My Favorite Songs\"")
-        if self.playlist.isFilledWithSeed == False:
+        if not self.playlist.isFilledWithSeed:
             print("[7] Load  Songs")
-        print("[9] Exit MyMusic\n")
+        print("[0] Exit MyMusic\n")
 
         self.optionHandler()
 
     def optionHandler(self):
         chosenMenuOption = tryParseInt(input(f"Option: "))
-        
+
         clearConsole()
 
-        if chosenMenuOption == 9:
+        if chosenMenuOption == 0:
             cprint("Thanks for using MyMusic. See you back soon!", "green")
             sys.exit()
         elif chosenMenuOption == 1:
@@ -45,14 +45,14 @@ class Menu:
         elif chosenMenuOption == 2:
             self.playlist.showFavoriteSongs()
         elif chosenMenuOption == 3:
-            self.playlist.showList()
+            self.playlist.showAllSongs()
         elif chosenMenuOption == 4:
             self.playlist.songsByGenre()
         elif chosenMenuOption == 5:
             self.playlist.createSong()
         elif chosenMenuOption == 6:
             self.playlist.addToFavorite()
-        elif chosenMenuOption == 7 and self.playlist.isFilledWithSeed == False:
+        elif chosenMenuOption == 7 and not self.playlist.isFilledWithSeed:
             self.playlist.seedListOfSongs()
         else:
             self.showOptions()

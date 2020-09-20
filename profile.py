@@ -64,10 +64,11 @@ class Profile:
         elif age < 0:
             cprint(
                 "Very funny, with this date of birth you shouldn\'t even"
-                "been born.\nGoodbye!", "red")
+                " been born yet.", "red")
         else:
             cprint(
-                "You\'re younger then 8.\nYou are not allowed to join.\n"
+                "You\'re younger then 8.\n"
+                "You are not allowed to join.\n"
                 "Hereby goodbye!", "red")
             sys.exit()
 
@@ -76,4 +77,3 @@ class Profile:
         print(f"Name: {self.name}")
         print(f" Age: {self.age} ({self.dateOfBirth.strftime(self.DATE_FORMAT)})")
         print(f"Time: {datetime.now().strftime(self.DATETIME_FORMAT)}")
-        
