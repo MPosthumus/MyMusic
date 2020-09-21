@@ -1,6 +1,9 @@
 # MyMusic
 Python eindopdracht(School)
 
+====Install====
+Before running this project, you should install: `pip install termcolor`
+
 MyMusic is sort of a MP3 player, where you can;
  - add new songs
     - title - artist - album - genre - duration
