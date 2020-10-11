@@ -59,6 +59,3 @@ class Menu:
 
         input("\nPress [Enter] to go back to the menu!")
         self.showOptions()
-
-    def showByGenre(self):
-        print('Genre Songs')
